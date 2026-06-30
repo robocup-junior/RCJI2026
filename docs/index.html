@@ -4,9 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RCJI 2026</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            margin-bottom: 2rem;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            width: 90%;
+            max-width: 1000px;
+        }
+        .panel {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            padding: 2rem 1rem;
+            transition: transform 0.2s;
+            text-decoration: none;
+            color: #333;
+        }
+        .panel:hover {
+            transform: translateY(-5px);
+        }
+        .panel i {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #007bff;
+        }
+        .panel h2 {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to RoboCupJunior 2026</h1>
-    <p>Coming soon!</p>
+    <h1>RoboCupJunior 2026</h1>
+    <div class="container">
+        <a href="/map" class="panel">
+            <i class="fas fa-map-location-dot"></i>
+            <h2>Map</h2>
+        </a>
+        <a href="https://catigoal.com/RCJI26/" class="panel" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-futbol"></i>
+            <h2>Soccer Schedule</h2>
+        </a>
+        <a href="https://rescue.rcj.cloud/img/robocup26/schedule/general_overall.png" class="panel" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-truck-medical"></i>
+            <h2>Rescue Schedule</h2>
+        </a>
+        <a href="https://example.com" class="panel" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-masks-theater"></i>
+            <h2>OnStage Schedule</h2>
+        </a>
+    </div>
 </body>
 </html>
